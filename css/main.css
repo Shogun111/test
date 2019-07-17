@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body,html{
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    font-style: 24px;
+}
+  .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100% auto;
+      height: 100% auto;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.4)
+  }
+  .modal-content {
+      position: relative;
+      background-color: rgb(255, 255, 255);
+      margin: auto;
+      padding: 0;
+      border: 5px solid rgb(255, 255, 255);
+      width: 50%;
+      height: 80%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
+  }
+  
+  .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  .modal-header {
+      padding: 2px 16px;
+      background-color: rgb(255, 255, 255);
+      color: white;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+      padding: 2px 16px;
+      background-color: rgb(255, 255, 255);
+      color: white;
+  }
+a{
+    text-decoration:none;
+    color: #000;
+}
+a:hover{
+    text-decoration:none;
+    color: #000;
+}
+nav{
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+button{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.menu{
+    line-height: 40px;
+}
+nav li{
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+}
+header{
+    padding-top: 15px;
+}
+
+.block-top{
+    background: url(../img/bg.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+    -o-background-size: cover;
+    height: auto;
+    background-size: cover;
+}
+.overlay{
+    background: url(../img/overlay.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+    background-size: cover;
+    height: auto;
+}
+.text-logo{
+    padding-right: 304px;
+    color: #00e0d0;
+}
+nav a{
+    color: #fff;
+    transition: 0.3s;
+}
+nav a:hover{
+    color: #00e0d0;
+    transition: 0.3s;
+}
+#text-prewie-slide{
+    height: auto;
+    margin-top: 25%;
+    text-align: center!important;
+}
+#text-prewie-slide .carousel-item{
+    height: 500px;
+}
+#text-prewie-slide .carousel-indicators li{
+    border-radius: 100%;
+    background: none;
+    border: 1px solid #bab9bc;
+    width: 10px; height: 10px;
+    margin-bottom: 50px;
+}
+#text-prewie-slide .carousel-indicators .active{
+    background: #00e0d0;
+}
+.btn-outline-primary{
+    color: #00e0d0;
+    border-color: #00e0d0;
+}
+.btn-outline-primary:hover{
+    background: #00e0d0;
+    border-color: #00e0d0;
+}
+section#our_story .container{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+section#our_story p{
+    color: #413d4b;
+}
+.video-block{
+    background: url(../img/bg-two.png) no-repeat center center; 
+    height: 50%;
+}
+section#story_video p{
+    padding-top: 10px;
+    font-weight: bold;
+}
+section#story_video .btn-play{
+    margin-top: 17%;
+    cursor: pointer;
+}
+section#expertis{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+section#expertis h3{
+    text-transform: uppercase;
+}
+section#expertis p{
+    color: #78777b;
+}
+section#expertis hr{
+    background: #c6c4c9; width: 50px; height: 2px;
+}
+section#expertis h5{
+    padding-top: 40px;
+    font-size: 14px;
+    font-weight: bold;
+}
+section#expertis .present{
+    padding-top: 85px;
+}
+section#expertis .present p{
+    padding-top: 15px;
+    font-size: 14px;
+}
+.content-present{
+    width: 270px;
+    height: 175px;
+}
+.bg-team{
+    background: url(../img/bg-team.png) no-repeat center center; 
+}
+section#team{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+section#team hr{
+    background: #c6c4c9; width: 50px; height: 2px;
+}
+section#team h5{
+    color: #fff;
+    font-size: 14px;
+    padding-top: 20px;
+}
+section#team p{
+    color: #c0c0c7;
+    font-size: 13px;
+}
+section#team button{
+    margin-top: 30px;
+}
+section#works{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+section#works h3{
+    padding-bottom: 70px;
+}
+section#works a{
+    line-height: 50px;
+    cursor: pointer;
+}
+section#works button{
+    margin-top: 70px;
+}
+section#works .gallery a{
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+}
+.bg-clients{
+    background: url(../img/bg-clients.png) no-repeat center center; 
+}
+section#clients{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+section#clients p{
+    color: #dfdee4;
+    padding-top: 40px;
+    font-weight: bold;
+}
+section#clients h1{
+    color: #fff;
+    font-size: 14px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+section#clients h2{
+    color: #cfced4;
+    font-size: 13px;
+}
+#slide_clients .carousel-item{
+    width: 100%;
+    height: 200px;
+}
+#slide_clients .carousel-control-next-icon{
+    left: -100%;
+}
+#slide_clients .carousel-control-prev-icon{
+    right: -100%;
+}
+#slide_clients .carousel-control-next-icon, .carousel-control-prev-icon{
+    position: absolute;
+    bottom: 0;
+}
+#slide_clients  .carousel-indicators .active{
+    transform: scale(1.4);
+    transition: 0.5s;
+}
+#slide_clients a{
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+#slide_clients .carousel-control-next {
+    right: 0;
+    bottom: 0px;
+    z-index: 1000;
+}
+#slide_clients .carousel-control-prev {
+    left: 0;
+    bottom: 0px;
+    z-index: 1000;
+}
+#slide_clients .carousel-indicators{
+    position: absolute;
+    z-index: 100;
+    bottom:-25px;
+    transition: 0.5s;
+}
+
+section#form_news{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+section#form_news input{
+    width: 100%;
+    margin-top: 20px;
+    height: 45px;
+    padding-left: 20px;
+    border: 1px solid #e5e5e5; 
+}
+section#form_news input[type=submit]{
+    width: auto;
+}
+textarea{
+    width: 100%;
+    margin-top: 20px;
+    padding-left: 20px;
+    height: 200px;
+    border: 1px solid #e5e5e5; 
+}
+.logo-brand{
+    margin-top: 40px;
+}
+.logo-brand img{
+    margin-bottom: 50px;
+}
+.bg-footer{
+    background: url(../img/bg-footer.png) no-repeat center center; 
+}
+section#footer {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+section#footer .logo {
+    margin-top: -15px;
+    padding-bottom: 20px;
+}
+section#footer h5 {
+    padding-bottom: 20px;
+}
+section#footer input[type=text] {
+    width: 210px;
+    height: 45px;
+    font-size: 14px;
+    text-align: center;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.5)
+}
+section#footer button {
+    margin-left: 10px;
+}
+section#footer .btn-footer {
+    width: 70px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0%;
+}
+section#footer .social {
+    margin-top: 30px;
+    margin-left: -35px;
+}
+section#footer .social li {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    background: none;
+    line-height: 35px;
+}
+section#footer .social a {
+    text-align: center;
+}
+section#footer .copy {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+section#footer  nav{
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+section#footer p{
+    font-size: 14px;
+}
+.footer-menu{
+    margin-left: -50px; margin-top: 93px;
+}
+i{
+    margin-left: -3px
+}
+
+/*===============   АДАПТИВ    ===============*/
+
+@media(min-width:0px) and (max-width:320px){
+    .block-top nav{
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        margin-right: 25px;
+    }
+    .block-top{
+        text-align: center!important;
+    }
+    section#our_story{
+        text-align: center!important;
+    }
+    section#our_story .logo{
+        padding-bottom: 20px;
+    }
+    .btn-play{
+        padding-top: 10%;
+    }
+    #slide_clients .carousel-control-next,
+    .carousel-control-prev{
+        display: none;
+    }
+    section#form_news{
+        text-align: center!important;
+    }
+    section#form_news h3{
+        margin-top: 20px;
+    }
+    .bg-footer{
+        text-align: center!important;
+    }
+    .footer-menu{
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        margin-top: -5px;
+        margin-right: -25px;
+    }
+    .bg-footer h5{
+        margin-top: 20px;
+    }
+    section#footer .copy {
+        margin-left: 0px;
+    }
+    .btn-footer{
+        margin-top: 10px;
+    }
+    #text-prewie-slide .carousel-item {
+        height: 600px;
+    }
+}
+
+@media(min-width:321px) and (max-width:480px){
+    .block-top nav{
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        margin-right: 25px;
+    }
+    .block-top{
+        text-align: center!important;
+    }
+    section#our_story{
+        text-align: center!important;
+    }
+    section#our_story .logo{
+        padding-bottom: 20px;
+    }
+    .btn-play{
+        padding-top: 10%;
+    }
+    #slide_clients .carousel-control-next,
+    .carousel-control-prev{
+        display: none;
+    }
+    section#form_news{
+        text-align: center!important;
+    }
+    section#form_news h3{
+        margin-top: 20px;
+    }
+    .bg-footer{
+        text-align: center!important;
+    }
+    .footer-menu{
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        margin-top: -5px;
+        margin-right: -25px;
+    }
+    .bg-footer h5{
+        margin-top: 20px;
+    }
+    section#footer .copy {
+        margin-left: 0px;
+    }
+    .btn-footer{
+        margin-top: 10px;
+    }
+    #text-prewie-slide .carousel-item {
+        height: 600px;
+    }
+}
+
+@media(min-width:481px) and (max-width:768px){
+
+}
